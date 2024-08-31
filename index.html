@@ -1,0 +1,32 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Important Links</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="input-el" placeholder="Enter a link or text">
+        <select id="section-select">
+            <option value="linkedin">LinkedIn Blog</option>
+            <option value="dev">Dev Blog</option>
+        </select>
+        <button id="input-btn">SAVE TEXT</button>
+        <button id="tab-btn">SAVE URL</button>
+        <button id="delete-btn">DELETE ALL</button>
+         <h2>LinkedIn Blog</h2>
+        <button id="export-linkedin-btn">Export LinkedIn Blog</button>
+        <ul id="linkedin-ul"></ul>
+        <h2>Dev Blog</h2>
+        <button id="export-dev-btn">Export Dev Blog</button>
+        <ul id="dev-ul"></ul>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+      <script src="index.js"></script>
+</body>
+</html>

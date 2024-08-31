@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    min-width: 400px;
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50pxg auto;
+    background: #16213e;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+input, select {
+    width: calc(100% - 22px);
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #0f3460;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    background-color: #0f3460;
+    color: #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #e94560;
+}
+
+button {
+    background: #e94560;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background: #d63651;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(233, 69, 96, 0.5);
+}
+
+#delete-btn {
+    background: transparent;
+    color: #e94560;
+    border: 2px solid #e94560;
+}
+
+#delete-btn:hover {
+    background: rgba(233, 69, 96, 0.1);
+}
+
+h2 {
+    margin-top: 25px;
+    color: #e0e0e0;
+    border-bottom: 2px solid #e94560;
+    padding-bottom: 10px;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+}
+
+ul {
+    margin-top: 15px;
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin-top: 10px;
+    background: #1f4068;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+a {
+    color: #e94560;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #ff6b6b;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+        min-width: unset;
+    }
+
+    .container {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    input, select {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    li {
+        padding: 12px;
+    }
+}
